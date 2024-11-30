@@ -12,6 +12,13 @@ CREATE TABLE customer (
   phone VARCHAR(15)
 );
 
+--new table users
+CREATE TABLE users (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    register_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 -- to show all tables
 SHOW TABLES;
 

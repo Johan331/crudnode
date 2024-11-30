@@ -6,7 +6,9 @@ const path = require('path');
 const app=express();
 //avisos
 const session = require('express-session');
+
 const flash = require('connect-flash');
+const bcrypt = require('bcrypt')
 
 // Configurar sesión
 app.use(session({
